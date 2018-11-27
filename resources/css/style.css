@@ -2,51 +2,129 @@ body {
   font-family: Helvetica;
   color: seashell;
   background-color: black;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+/* Header */
 
 header {
   font-size: 22px;
   opacity: 0.9;
   height: 69px;
   border-bottom: 1px solid seashell;
+  background-color: black;
+  width: 100%;
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header img {
   height: 50px;
+  margin-left: 10px;
 }
 
 header ul {
   text-decoration: underline;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
 }
 
 header a {
   color: white;
 }
 
-.item img {
-  height: 200px;
-  width: 300px;
+header li {
+  display: inline;
 }
 
-.nitem {
-  width: 50%;
-  display: inline-flex;
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.spacing {
+  height: 69px;
 }
 
 /* Mission */
-.mission {
 
+.mission-content {
+  background-color: black;
+  text-align: center;
 }
 
 .mission-image {
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg');
   height: 700px;
   width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Featured Items */
-.featured {
+
+.featured-label {
+  text-align: center;
+}
+
+.item-container {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  text-align: center;
+  margin: 0px 10px;
+}
+
+.item h4 {
+  margin: 10px 0px;
+}
+
+.item img {
+  width: 300px;
+  height: 200px;
+}
+
+/* Location */
+
+.location-label {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.location-background {
+  background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg');
+  height: 500px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.location {
+  width: 300px;
+  background-color: black;
+  text-align: center;
+  margin: 0px 20px;
+  opacity: 1;
 }
 
 /* Contact */
@@ -56,6 +134,10 @@ header a {
 }
 
 /* Footer */
+footer {
+  width: 100%;
+}
+
 footer h5{
   margin-left: 20px;
   text-align: left;
